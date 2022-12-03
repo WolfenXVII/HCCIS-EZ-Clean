@@ -1,0 +1,64 @@
+/*
+##################################################
+  Author: Noel Spurrell
+  Date: 2022-11-23
+  Purpose: CIS-1280 Assignment 5 - Bootstrap Assignment - Custom CSS Overrides
+##################################################
+ */
+
+.navbar {
+    background-color: #113f46 !important;
+}
+/*Adds more spacing between the logo and business name, makes logo have rounded corners*/
+.logo-img {
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+/*Adds more spacing between the navbar and jumbotron, changes the color of the jumbotron*/
+.jumbotron {
+    margin-top: 40px;
+    background-color: #879ea2;
+}
+.col-md-12 {
+    margin-top: 100px;
+}
+
+/*Changes the color of the jumbotron h1*/
+.display-4 {
+    color: #ffc107;
+}
+
+/*Changes the text color of the dropdown menu items (not including those that are muted)*/
+.dropdown-item {
+    color: darkgrey;
+}
+
+/*Changes the background color for the active dropdown menu item*/
+.dropdown-item.active {
+    background-color: #ffc107;
+}
+
+/*Adjusts spacing between navbar and content dependant on viewport size*/
+@media screen and (max-width: 767px) {
+    .jumbotron {
+        margin-top: 190px;
+    }
+    .col-md-12 {
+        margin-top: 250px;
+    }
+}
+@media screen and (max-width: 408px) {
+    .jumbotron {
+        margin-top: 270px;
+    }
+    .col-md-12 {
+        margin-top: 330px;
+    }
+}
+
+/*Puts emphasis on text by making it bold*/
+.emphasis {
+    font-weight: bold;
+}
+
